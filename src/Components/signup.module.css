@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #eee9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 17px 0px;
+}
+
+.container::before {
+  content: "";
+  height: 15px;
+  width: 100vw;
+  background-color: #eee9e9;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden; /*Doubt*/
+  background-color: #ff4779;
+  padding: 30px 0px;
+  margin: 50px 0px 20px;
+}
+
+.container > .signup > h1 {
+  /* select only the respective child under container => sign_in  */
+  font-weight: 550;
+  margin-bottom: 28px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.container form .form_group {
+  display: flex;
+  justify-content: center;
+}
+
+.container form .form_group input {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  margin: 8px;
+}
+
+.container form .form_group input:focus {
+  box-shadow: 3px 3px 10px 10px rgba(108, 100, 223, 0.3);
+}
+
+.container form .form_group input::placeholder {
+  font-weight: 600;
+}
+
+.container form .username_msg {
+  display: flex;
+  flex-direction: flex-start;
+  margin-left: 65px;
+  font-size: 13px;
+}
+
+.container form .show_password {
+  display: flex;
+  flex-direction: flex-start;
+  margin-left: 65px;
+  font-size: 13px;
+}
+
+.container .submit button {
+  width: 45%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: "Prompt", sans-serif;
+  cursor: pointer;
+  border: 1px groove white;
+  background-color: #ff4779;
+  color: white;
+  margin: 15px;
+}
+
+.container .submit button:hover {
+  box-shadow: 3px 3px 10px 2px rgba(248, 247, 247, 0.3);
+}
+
+#responseText {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}

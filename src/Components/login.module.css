@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #eee9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  height: 440px;
+  width: 700px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sign_in {
+  width: 350px;
+  background-color: whitesmoke;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container form {
+  /* (without arrow) Apply to all child under the container  */
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container > .sign_in > h1 {
+  /* select only the respective child under container => sign_in  */
+  font-weight: 460;
+  margin-bottom: 28px;
+  color: #ff4779;
+}
+
+.container form .form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.container form .form_group label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.container form .form_group input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.container form .form_group input::placeholder {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.container form .form_group input:focus{
+  box-shadow: 3px 3px 10px 10px rgba(108, 100, 223, 0.3);
+}
+
+.checkbox_forget {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  bottom: 30px;
+}
+
+.container form .checkbox_forget .show_password label {
+  color: #ff4779;
+  cursor: pointer;
+}
+
+.container form .checkbox_forget p a {
+  color: rgb(10, 10, 66);
+  text-decoration: none;
+}
+
+.container form .checkbox_forget p a:hover{
+  color: blue;
+}
+
+.container form .submit button {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff4779;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Prompt", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.container form .submit button:hover {
+  background-color: #d83a64;
+}
+
+.sign_up {
+  width: 350px;
+  background-color: #ff4779;
+  padding: 120px 50px;
+  color: white;
+}
+
+.sign_up .create_account {
+  height: 70px;
+}
+
+#responseText {
+  height: 130px;
+}
+
+.sign_up .create_account .sign_up_btn button {
+  width: 45%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: "Prompt", sans-serif;
+  cursor: pointer;
+  border: 1px groove white;
+  background-color: #ff4779;
+  color: white;
+  margin-top: 15px;
+}
+
+.sign_up .create_account .sign_up_btn button:hover {
+  box-shadow: 3px 3px 10px 2px rgba(248, 247, 247, 0.3);
+}
