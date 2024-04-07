@@ -88,7 +88,7 @@ export default function ForgetPassword () {
 
       {buttonDisabled && (
         <p className = {forgetCSS.responseMessage}>
-          {`Please wait for ${countdown} seconds before sending the password reset link to Email again.`}
+          {`Please wait for ${countdown} seconds before sending the password reset link to Email again`}
         </p>
       )}
     </form>
