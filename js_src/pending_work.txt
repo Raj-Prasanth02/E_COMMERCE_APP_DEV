@@ -1,0 +1,15 @@
+////////////////  To do  ///////////////////
+
+1. Backend validation for signUp, forget password, Login - (Try, catch)
+2. Error handling if backend validation works
+3. Password attempt more than 5 times - Completed
+4. Mail transport - Completed
+5. The link should be inactive once the passwsord is updated successfully - Completed
+
+
+////////////////  Good To have  ///////////////////
+1. Reset password link should not open if the token expired (Completed)
+
+
+
+

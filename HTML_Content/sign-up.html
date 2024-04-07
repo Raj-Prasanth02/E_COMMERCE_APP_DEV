@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <form id = 'sign-up-Form'>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="firstName"><br><br>
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="lastName"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <label for="mobile-no">Mobile No:</label>
+      <input type="text" id="mobile-no" name="MobileNumber"><br><br>
+      <label for="address"> :</label>
+      <textarea id="address" name="Address"></textarea><br><br>
+      <input type="submit" value="Sign Up">
+      <div id = 'error-message'> </div>
+    </form> 
+
+    <script src="axios" type="text/javascript"></script>
+    <script>
+      const form = document.getElementById('sign-up-Form');
+      const errorMessage = document.getElementById('error-message');
+    
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault(); //Should not refresh the page
+    
+        let firstName = form.firstName.value;
+        let lastName = form.lastName.value;
+        let Email = form.Email.value;
+        let password = form.password.value;
+        let MobileNumber = form.MobileNumber.value;
+        let Address = form.Address.value;
+    
+        var body = { firstName, lastName, Email, password, MobileNumber, Address };
+        const onSubmit = body => {
+        axios.post('http://localhost:4000/signUp', body) //Axios is promised base http client, we can use instead of fetch. Use of n/w request.
+          .then(res => {
+            if (res.status === 200)
+              alert('User successfully created')
+            else
+              Promise.reject()
+          })
+          .catch(err => alert('Something went wrong'))
+          }
+      });
+    </script> 
+  </body>
+</html>
