@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import forgetCSS from './forget.module.css'
 
-//import { Link } from "react-router-dom";
 //Create a virtual DOM, its load the particular change
 
 export default function ForgetPassword () {
