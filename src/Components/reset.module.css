@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container{
+    height: 280px;
+    width: 500px;
+    background-color: #ff4779;
+    font-family: "Prompt", sans-serif;
+    border-radius: 8px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.para{
+    color: white;
+    font-size: 18px;
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+
+.form_group{
+    width: 90%;
+    height: 80px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    /* background-color: yellow; */
+    margin-left: 25px;
+}
+
+
+.form_group input{
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  margin-top: 0px;
+
+}
+
+.form_group input:focus {
+  box-shadow: 3px 3px 10px 10px rgba(108, 100, 223, 0.3);
+}
+
+.form_group input::placeholder {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.show_password {
+  display: flex;
+  flex-direction: center;   
+  margin-left: 70px;
+  font-size: 13px;
+}
+
+#responseText{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#responseText:empty{
+    padding: 0;
+    margin: 0;
+}
