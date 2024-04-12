@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,6 @@ body {
 .container {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  height: 440px;
   width: 700px;
   display: flex;
   border-radius: 10px;
@@ -153,3 +153,145 @@ body {
 .sign_up .create_account .sign_up_btn button:hover {
   box-shadow: 3px 3px 10px 2px rgba(248, 247, 247, 0.3);
 }
+
+@media (min-width: 577px){
+  .container{
+    height: 440px;
+  }
+}
+
+/* Large size*/
+@media (max-width: 1200px){
+  .container{
+    /* height: 420px; */
+    width: 620px;
+  }
+
+  .checkbox_forget{
+    font-size: 13px;
+  }
+
+  .sign_in{
+    padding: 35px 30px;
+  }
+
+  .sign_up{
+    padding: 105px 30px;
+  }
+
+  .container form .form_group input::placeholder {
+    font-size: 12px;
+  }
+
+  .container form .form_group label {
+    font-size: 12px;
+  }
+
+  .sign_up .create_account .sign_up_btn button {
+    height: 35px;
+    font-size: 17px;
+  }
+
+  .container form .submit button {
+    height: 35px;
+    font-size: 18px;
+  }
+
+}
+
+/* No need for medium size*/
+
+
+/* Small size*/
+@media (max-width: 768px){
+  .container{
+    /* height: 370px; */
+    width: 550px;
+  }
+
+  .checkbox_forget{
+    bottom: 15px;
+    font-size: 13px;
+  }
+
+  .sign_in{
+    padding: 30px 30px;
+  }
+
+  .sign_up{
+    padding: 105px 30px;
+  }
+
+  .container form .form_group input::placeholder {
+    font-size: 11px;
+  }
+
+  .container form .form_group label {
+    font-size: 11px;
+  }
+
+  .sign_up .create_account .sign_up_btn button {
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .container form .submit button {
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .container > .sign_in > h1 {
+    font-size: 26px;
+  }
+
+  #responseText {
+    height: 130px;
+    font-size: 20px;
+  }
+
+}
+
+
+
+/* Extra Small size*/
+@media (max-width: 576px){
+  .container{
+    flex-direction: column;
+    width: 350px;
+    margin: 100px 0px 50px;
+  }
+
+
+  .container form {
+
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  .sign_up {
+    width: 350px;
+    background-color: #ff4779;
+    padding: 20px 30px;
+    color: white;
+  }
+
+  #responseText {
+   height: 75px;
+   font-size: 17px;
+   font-weight: 500;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
