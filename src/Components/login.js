@@ -6,7 +6,7 @@ import { useState } from 'react'
 export default function Login () {
   const [inputs, setInputs] = useState({})
 
-  const [responseMessage, setresponseMessage] = useState('Welcome to Happycart')
+  const [responseMessage, setresponseMessage] = useState('HAVE A FRESH JUICE')
 
   const handleChange = event => {
     const name = event.target.name

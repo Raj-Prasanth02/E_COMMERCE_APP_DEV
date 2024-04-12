@@ -1,5 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
+
+/* body::before {
+  content: "XS";
+  color: orangered;
+  font-size: 30px;
+  position: fixed;
+  font-weight: bold;  
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  background-color: aliceblue;
+} */
+
+/* 
+@media (min-width: 576px) {
+  body::before {
+    content: "SM";
+  }
+}
+
+@media (min-width: 768px) {
+  body::before {
+    content: "MD";
+  }
+}
+
+@media (min-width: 992px) {
+  body::before {
+    content: "LG";
+  }
+}
+
+@media (min-width: 1200px) {
+  body::before {
+    content: "XL";
+  }
+}
+@media (min-width: 1400px) {
+  body::before {
+    content: "XXL";
+  }
+} */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +84,7 @@ body {
   overflow: hidden; /*Doubt*/
   background-color: #ff4779;
   padding: 30px 0px;
-  margin: 50px 0px 20px;
+  margin: 80px 0px 20px;
 }
 
 .container > .signup > h1 {
